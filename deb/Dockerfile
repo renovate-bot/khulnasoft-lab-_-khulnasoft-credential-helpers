@@ -2,7 +2,7 @@
 
 ARG GO_VERSION=1.21.6
 ARG DISTRO=ubuntu
-ARG SUITE=focal
+ARG SUITE=noble
 
 FROM golang:${GO_VERSION}-bullseye AS golang
 

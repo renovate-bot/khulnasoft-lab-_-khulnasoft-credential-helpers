@@ -19,7 +19,7 @@ env:
 
 jobs:
   validate:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     strategy:
       fail-fast: false
       matrix:
@@ -112,7 +112,7 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
 
   test-sandboxed:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       -
         name: Checkout
@@ -136,7 +136,7 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
 
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       -
         name: Checkout
@@ -182,7 +182,7 @@ jobs:
           files: ${{ env.DESTDIR }}/*
 
   build-deb:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       -
         name: Checkout
