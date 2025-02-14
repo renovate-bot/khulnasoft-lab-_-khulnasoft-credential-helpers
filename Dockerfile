@@ -3,7 +3,7 @@
 ARG GO_VERSION=1.21.6
 ARG XX_VERSION=1.4.0
 ARG OSXCROSS_VERSION=11.3-r7-debian
-ARG GOLANGCI_LINT_VERSION=v1.55.2
+ARG GOLANGCI_LINT_VERSION=v1.64.5
 ARG DEBIAN_FRONTEND=noninteractive
 
 ARG PACKAGE=github.com/khulnasoft-lab/khulnasoft-credential-helpers
